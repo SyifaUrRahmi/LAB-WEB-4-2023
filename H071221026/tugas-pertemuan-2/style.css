@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: orange; 
+    position: fixed;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.about {
+    padding: 80px 300px;
+    text-align: justify;
+}
+
+@media (max-width: 1000px) {
+    .about {
+    padding: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar li {
+        margin: 0 20px;
+    }
+}
+    
+.image-flex {
+    display: flex;
+    flex-wrap: wrap; /* Menggunakan flex wrap untuk membuat gambar baris baru ketika mencapai batas lebar */
+    gap: 10px; /* Ruang antar gambar */
+    margin-top: 20px; /* Berikan margin atas dari teks paragraf */
+}
+
+.image-item {
+    flex: 1; /* Gambar akan menyesuaikan lebar secara merata */
+    overflow: hidden; /* Agar gambar tidak melebihi kotaknya */
+}
+
+.image-item img {
+    width: 100%; /* Agar gambar sesuai dengan kotaknya */
+    height: auto;
+    display: block;
+}
+
+
+
+
+
+
