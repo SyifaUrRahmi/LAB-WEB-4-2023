@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+.body{
+    min-width: 300px;
+}
+
+.navbar {
+    background-color: orange;
+    position: fixed;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 20px;
+}
+
+.navbar a:hover{
+    background-color: rgb(99, 55, 2);
+}
+.about {
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+@media (max-width: 1000px) {
+    .about {
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar li {
+        margin: 0 20px;
+    }
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+}
+
+.galery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 900px;
+}
+
+.galery img{
+    width: 250px;
+    height: 150px;
+    transition: 0.3s;
+}
+
+.galery img:hover{
+    transform: scale(1.1);
+}
+
+.image-item{
+    display: block;
+    object-fit: cover;
+    overflow: hidden;
+    height: 150px;
+    width: 250px;
+    margin: 5px;
+}
+
+footer {
+    background-color: rgb(2, 36, 2);
+    color: #fff;
+    padding: 5px;
+    /* padding-left: 5px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-right: 5px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+}
+
+.footer-logo{
+    text-align: center;
+    padding-left: 30px;
+}
+
+.footer-logo img{
+    max-width: 50px;
+}
+
+.footer-logo p{
+    margin: 5px 0;
+    font-size: 8px; 
+    font-weight: bold; 
+}
+
+.footer-contact p {
+    padding-right: 50px;
+}
+
+#Contact{
+    padding-top: 20px;
+}
+
+
+
+
