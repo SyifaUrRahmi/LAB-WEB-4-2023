@@ -1,0 +1,144 @@
+#thumb{
+    height: 300px;
+    width: 100%;
+    
+}
+
+#thumb img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+}
+
+.card{
+    margin: 0 3px;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 0;
+}
+
+.image-wrapper{
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 992px) {
+    .image-wrapper {
+        max-width: 350px;
+        max-height: 300px;
+    }
+}
+
+.image-wrapper img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.carousel-inner {
+    padding: 1em;
+}
+
+#hampers{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#hadiah{
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0;
+}
+
+.tombol button{
+    height: 75px;
+    width: 200px;
+    transition: background-color 0.3s ease;
+}
+
+.tombol button:hover{
+    background-color: white;
+    border: solid black;
+    color: black;
+}
+
+#lokasi{
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0;
+}
+
+#tempat{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+hr{
+    border-top: 100px solid #000000;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: black;
+}
+
+footer p{
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link{
+    margin-right: 30px;
+    font-size: 100px;
+}
+
+.navbar-nav{
+    margin-left: auto;
+}
+
+.navabr-brand{
+    height: 10px;
+    width: 15px;
+}
+
+.navabr-brand img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.navbar{
+    border-bottom: 2px solid rgb(121, 121, 121);
+}
+
+@media (min-width: 992px) {
+    .nav-link {
+        margin-right: 30px;
+        font-size: 100px;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid black;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    nav{
+        position: fixed;
+    }
+}
