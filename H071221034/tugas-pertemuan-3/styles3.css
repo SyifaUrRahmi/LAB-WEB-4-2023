@@ -1,0 +1,15 @@
+.nav-item{
+    transition: all 0.2s;
+}
+
+.nav-item:hover{
+    border-bottom: 3px solid #87CEEB;
+}
+
+.card{
+    transition: all 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
