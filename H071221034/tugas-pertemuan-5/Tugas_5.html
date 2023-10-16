@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlackJack</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    body {
+        background-image: url(Assets/572e69f4c8a76748495a9e61d474efb0.jpg);
+        background-size: cover;
+    }
+
+    .blackjack-content {
+        background-color: rgb(37, 65, 41);
+        width: 700px;
+        padding: 20px;
+        border-radius: 25px;
+        margin: 30px;
+    }
+    
+    .blackjack-content h1 {
+        padding-bottom: 20px;
+        font-size: 40px;
+        color: white;
+        text-shadow: 2px 2px black;
+    }
+
+    .blackjack-content .result {
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+
+    .blackjack-content .player2, .player1{
+        padding-bottom: 30px;
+    }
+
+    .blackjack-content h4 {
+        font-size: 20px;
+        color: white;
+    }
+
+    .blackjack-content input {
+        margin: 10px;
+        height: 25px;
+        width: 200px;
+        font-size: 17px;
+        padding: 7px;
+        border-radius:10px;
+        border: none;
+    }
+
+    .ai-cards, .your-cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .ai-cards img, .your-cards img {
+        width: 70px;
+    }
+
+    button {
+        width: 100px;
+        height: 30px;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.3s;
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+
+    button:hover {
+        transform: scale(1.1);
+    }
+    </style>
+  </head>
+  <body>
+    <center>
+      <div class="blackjack-content">
+        <h1>BlackJack Games</h1>
+        <h4 class="result" id="result"></h4>
+        <div class="player2">
+            <h4 class="ai-cards" id="aicard">Dealer's Card :</h4>
+            <h4 class="ai-sums" id="aisum">Score :</h4>
+        </div>
+        <div class="player1">
+            <h4 class="your-cards" id="urcard">My Card :</h4>
+            <h4 class="your-sums" id="ursum">Score :</h4>
+        </div>
+        <h4 class="your-money" id="money">Your Money : Rp. </h4>
+        <input id="bet" type="number" placeholder="Enter Your Bet!!" />
+        <br>
+        <button class="start-game" id="startbtn">Start Game</button>
+        <button class="take-acard" id="hitbtn">Hit</button>
+        <button class="hold-card" id="holdbtn">Hold</button>
+      </div>
+    </center>
+    <script src="Tugas_5.js"></script>
+  </body>
+</html>
