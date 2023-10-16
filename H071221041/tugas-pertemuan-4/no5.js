@@ -9,5 +9,4 @@ if (decimal == 0){
         decimal = Math.floor(decimal / 2); 
     }
     alert("Angka binary: " + binary);
-    
 }

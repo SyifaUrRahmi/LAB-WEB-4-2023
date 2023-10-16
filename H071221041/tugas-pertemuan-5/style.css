@@ -1,0 +1,72 @@
+body {
+  background-color: #952323;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #d2d38a;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, p {
+  color: #d2d38a;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.bot-cards img, .my-cards img {
+  width: 120px;
+  margin: 5px 0;
+  border: 2px solid #d2d38a;
+  border-radius: 5px;
+}
+
+input {
+  width: 150px;
+  height: 25px;
+  border: 2px solid #d2d38a;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #d2d38a;
+  margin: 5px 0;
+}
+
+input::placeholder {
+  text-align: center;
+  color: #d2d38a;
+}
+
+button {
+  width: 150px;
+  font-size: 16px;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #F2E8C6;
+  color: #A73121;
+  border: 2px solid #d2d38a;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c7c3c3;
+}
