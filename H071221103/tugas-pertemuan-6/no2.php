@@ -46,12 +46,13 @@
             $jenis_kelamin = $_POST["jenis_kelamin"];
             
    
-            // Mengonversi tanggal lahir ke format yang diinginkan
+            
             $tanggal_lahir = date('d F Y', strtotime($tgl_lahir));
+            
             
             if (isset($_POST["bahasa"]) && !empty($_POST["bahasa"])) {
                 $bahasa = $_POST["bahasa"];
-                $bahasa_str = implode(", ", $bahasa);  // untuk mengubah array jadi string (fungsi implode)
+                $bahasa_str = implode(", ", $bahasa);  
                 $perkenalan = "Halo! Perkenalkan nama saya $nama. Saya berumur $usia tahun. Saya lahir pada tanggal $tanggal_lahir. Saya berjenis kelamin $jenis_kelamin. Saat ini saya menguasai bahasa pemrograman $bahasa_str";
             } else {
                 $perkenalan = "Halo! Perkenalkan nama saya $nama. Saya berumur $usia tahun. Saya lahir pada tanggal $tanggal_lahir. Saya berjenis kelamin $jenis_kelamin. Saat ini saya belum menguasai bahasa pemrograman apapun.";

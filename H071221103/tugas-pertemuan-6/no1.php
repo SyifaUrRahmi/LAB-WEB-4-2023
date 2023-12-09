@@ -79,12 +79,12 @@ $data = [
     <table>
         <?php
         if ($_GET) {
-            echo "<tr>"; // baris pertama dalam tabel
-            foreach ($data[0] as $key => $value) {  // untuk mengambil judul kolom dari elemen pertama dari array
-                echo "<th>". $key . "</th>";        // dan dicetak dalam tabel header
+            echo "<tr>"; 
+            foreach ($data[0] as $key => $value) { 
+                echo "<th>". $key . "</th>";        
             }
-            echo "</tr>";  // untuk cetak baris baru dalam html
-            for ($i = 0; $i < sizeof($data); $i++) {  // perulangan untuk mengakses setiap elemen dalam array $data
+            echo "</tr>"; 
+            for ($i = 0; $i < sizeof($data); $i++) {  
                 echo "<tr>";
                 if (strtolower($_GET["tipe"]) == strtolower($data[$i]['jenis'])) {
                     foreach ($data[$i] as $key => $value) {
